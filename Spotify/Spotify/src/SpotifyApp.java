@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Musica {
     private String titulo;
     private String genero;
-    private int duracao; // em segundos
+    private int duracao; 
 
     public Musica(String titulo, String genero, int duracao) {
         this.titulo = titulo;
@@ -73,7 +73,7 @@ public class SpotifyApp {
             exibirMenu();
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar o buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -131,7 +131,7 @@ public class SpotifyApp {
         String genero = scanner.nextLine();
         System.out.print("Digite a duração da música (em segundos): ");
         int duracao = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine(); 
 
         Musica musica = new Musica(titulo, genero, duracao);
         artista.adicionarMusica(musica);
